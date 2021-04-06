@@ -1,11 +1,14 @@
-import styles from "./App.module.css";
+import React from 'react';
+import styles from './App.module.css';
+import Hello from './Hello';
 
 const App = () => {
   return (
     <div className={styles.container}>
-      <p className={styles.message}>
-        Edit <code>src/App.js</code> and save to reload.
-      </p>
+      <div className={styles.messaeg}>
+        <Hello name="Rect" />
+        <Hello name="Gatsby" />
+      </div>
     </div>
   );
 };
